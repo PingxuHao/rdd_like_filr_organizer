@@ -1,6 +1,7 @@
 # rdd_like_filr_organizer
 This program supports merging html/md file in a single html file, with support for math function in md. 
 All style section of each html file would be stripped, ideally only pass in the body secction. 
+main.html is reset after each operation in the GUI, so makesure to save the desired main.html before each modification. 
 
 instruction:
 1. install all packages in requirement
@@ -12,5 +13,7 @@ instruction on adding breakpoint(child_item in menu):
 copy and paste the followin into the html or md file thaat you want to add:
 <!-- BREAKPOINT: ChildItemName -->
 currently it only supports 2 level of child items, which can be found in breakpoint.txt
+
+Included are 3 files for testing, try adding them into the main.html. 
 
 
