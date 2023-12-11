@@ -1,0 +1,245 @@
+
+<html>
+
+<head>
+<!--<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">  -->
+
+<title>Large HTML page with images</title>
+
+<!-- The following link block and style block present methods how to load external CSS documents.
+     The link tag forces an immediate download of the CSS document whereas the import clause in
+     the style block has the document downloaded some random time later.  -->
+
+<link href="htmlparser/sections.css" rel="stylesheet" type="text/css">
+
+
+<!--
+<style type="text/css">
+@import url(htmlparser/sections.css);
+</style> 
+-->
+
+</head>
+
+<body>
+<div align="center"><center>
+<h1 class="fore">When to load CSS</h1>
+
+<table border="0" cellspacing="5" width="100%" bgcolor="#F2F2FF">
+  <tr>
+    <td><p align="left"><font color="#000080" size="5" face="Tahoma"><strong>Large HTML page
+    with Images</strong></font></td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+
+<p><strong><small><font face="Verdana">This page shall test if the recorder generates
+scripts with requests in correct order. It includes images in sequential order: stadyn_image1.gif
+through stadyn_image10.gif</font></small></strong></p>
+
+<hr>
+
+<p><img src="apple.jpg" width="70" height="70" alt="stadyn_image1.gif (6512 bytes)"><br>
+stadyn_image1</p>
+
+<p><img src="apple.jpg" width="70" height="70" alt="stadyn_image2.gif (5983 bytes)"><br>
+stadyn_image2</p>
+
+<p align="center"><b><font SIZE="6">Open Financial Exchange<br>
+Specification 1.0</font></b> </p>
+
+<p align="center"><b><font SIZE="2">February 14, 1997<br>
+</font></b></p>
+
+<p align="center"><b><font SIZE="2">© 1997 CheckFree Corp., Intuit Inc., Microsoft Corp.
+All rights reserved<br>
+<br>
+<br>
+</font></b></p>
+
+<p align="center"><i><b><font SIZE="5">Chapters 1 - 10<br>
+<br>
+<br>
+<br>
+<br>
+</font></b></i></p>
+
+<h1><img src="apple.jpg" width="70" height="70" alt="stadyn_image3.gif (6537 bytes)"><br>
+<font SIZE="5">stadyn_image3</font></h1>
+
+<h1><img src="apple.jpg" width="70" height="70" alt="stadyn_image4.gif (6028 bytes)"><br>
+stadyn_image4</h1>
+
+<p><img src="apple.jpg" width="70" height="70" alt="stadyn_image5.gif (4068 bytes)"><br>
+stadyn_image5</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1><a NAME="_Toc371408167"><font SIZE="5">Contents</font></a></h1>
+
+<p>1. Overview 51.1 Introduction 51.1.1 Design Principles 51.2 Open Financial Exchange at
+a Glance 71.2.1 Data Transport 71.2.2 Request and Response Model 81.3 Conventions 92.
+Structure 102.1 HTTP Headers 102.2 Open Financial Exchange Headers 112.2.1 The Meaning of
+Version Numbers 122.3 SGML Details 122.3.1 Compliance 122.3.2 Special Characters 122.4
+Open Financial Exchange SGML Structure 132.4.1 Overview 132.4.2 Top Level 132.4.3 Messages
+132.4.4 Message Sets and Version Control 142.4.5 Transactions 152.5 The Signon Message Set
+162.5.1 Signon &lt;SONRQ&gt; &lt;SONRS&gt; 162.5.2 PIN Change &lt;PINCHRQ&gt;
+&lt;PINCHRS&gt; 192.5.3 Examples 202.6 External Data Support 202.7 Extensions to Open
+Financial Exchange 213. Common Aggregates, Elements, and Data Types 223.1 Common
+Aggregates 223.1.1 Identifying Financial Institutions and Accounts 223.1.2 Balance Records
+&lt;BAL&gt; 223.1.3 Error Reporting &lt;STATUS&gt; 233.2 Common Elements 243.2.1 Financial
+Institution Transaction ID &lt;FITID&gt; 243.2.2 Server-Assigned ID &lt;SRVRTID&gt;
+243.2.3 Client-Assigned Transaction UID &lt;TRNUID&gt; 253.2.4 Token &lt;TOKEN&gt; 253.2.5
+Transaction Amount &lt;TRNAMT&gt; 253.2.6 Memo &lt;MEMO&gt; 253.2.7 Date Start and Date
+End &lt;DTSTART&gt; &lt;DTEND&gt; 263.3 Common data types 263.3.1 Dates and Times 263.3.2
+Amounts, Prices, and Quantities 283.3.3 Language 283.3.4 Basic data types 284. Security
+294.1 Security Solutions 294.1.1 Determining Security Levels &lt;OFXSEC&gt;
+&lt;TRANSPSEC&gt; 294.2 Channel-Level Security 304.2.1 Security Requirements 304.2.2 Using
+SSL 3.0 in Open Financial Exchange 304.3 Application-Level Security 314.3.1 Requirements
+for Application-Layer Security 314.3.2 Using Application-level Encryption in Open
+Financial Exchange 325. International Support 335.1 Language and Encoding 335.2 Currency
+&lt;CURDEF&gt; &lt;CURRENCY&gt; &lt;ORIGCURRENCY&gt; 335.3 Country-Specific Tag Values
+346. Data Synchronization 356.1 Overview 356.2 Background 356.3 Data Synchronization
+Approach 366.4 Data Synchronization Specifics 376.5 Conflict Detection and Resolution
+396.6 Synchronization vs. Refresh 406.7 Typical Server Architecture for Synchronization
+416.8 Typical Client Processing of Synchronization Results 436.9 Simultaneous Connections
+446.10 Synchronization Alternatives 446.10.1 Lite Synchronization 446.10.2 Relating
+Synchronization and Error Recovery 456.11 Examples 467. FI Profile 487.1 Overview 487.1.1
+Message Sets 487.1.2 Version Control 497.1.3 Batching and Routing 497.2 Profile Request
+507.3 Profile Response 517.3.1 Message Set 527.3.2 Signon Realms 537.3.3 Status Codes
+537.4 Profile Message Set Profile Information 548. Activation &amp; Account Information
+558.1 Overview 558.2 Approaches to User Sign-Up with Open Financial Exchange 558.3 Users
+and Accounts 568.4 Enrollment and Password Acquisition &lt;ENROLLRQ&gt; &lt;ENROLLRS&gt;
+568.4.1 User IDs 578.4.2 Enrollment Request 578.4.3 Enrollment Response 598.4.4 Enrollment
+Status Codes 598.4.5 Examples 608.5 Account Information 608.5.1 Request &lt;ACCTINFORQ&gt;
+618.5.2 Response &lt;ACCTINFORS&gt; 618.5.3 Account Information Aggregate &lt;ACCTINFO&gt;
+628.5.4 Status Codes 628.5.5 Examples 638.6 Service Activation 638.6.1 Activation Request
+and Response 648.6.2 Service Activation Synchronization 668.6.3 Examples 668.7 Name and
+Address Changes &lt;CHGUSERINFORQ&gt; &lt;CHGUSERINFORS&gt; 678.7.1 &lt;CHGUSERINFORQ&gt;
+678.7.2 &lt;CHGUSERINFORS&gt; 688.7.3 Status Codes 688.8 Signup Message Set Profile
+Information 699. Customer to FI Communication 709.1 The E-Mail Message Set 709.2 E-Mail
+Messages 709.2.1 Regular vs. Specialized E-Mail 719.2.2 Basic &lt;MAIL&gt; Aggregate
+719.2.3 E-Mail &lt;MAILRQ&gt; &lt;MAILRS&gt; 719.2.4 E-Mail Synchronization
+&lt;MAILSYNCRQ&gt; &lt;MAILSYNCRS&gt; 729.2.5 Example 739.3 Get HTML Page 749.3.1 MIME Get
+Request and Response &lt;GETMIMERQ&gt; &lt;GETMIMERS&gt; 749.3.2 Example 759.4 E-Mail
+Message Set Profile Information 7610. Recurring Transactions 7710.1 Creating a Recurring
+Model 7710.2 Recurring Instructions &lt;RECURRINST&gt; 7710.2.1 Values for &lt;FREQ&gt;
+7810.2.2 Examples 7910.3 Retrieving Transactions Generated by a Recurring Model 8010.4
+Modifying and Canceling Individual Transactions 8010.5 Modifying and Canceling Recurring
+Models 8010.5.1 Examples 81 
+
+<ol>
+  <li><a NAME="_Toc380493239"><font SIZE="6" FACE="Arial">Overview</font></a> </li>
+  <li><a NAME="_Toc380493240"><font SIZE="5" FACE="Arial">Introduction</font></a> </li>
+</ol>
+
+<p><font SIZE="2">Open Financial Exchange is a broad-based framework for exchanging
+financial data and instructions between customers and their financial institutions. It
+allows institutions to connect directly to their customers without requiring an
+intermediary. <br>
+<br>
+</font></p>
+
+<p><font SIZE="2">Open Financial Exchange is an open specification that anyone can
+implement: any financial institution, transaction processor, software developer or other
+party. It uses widely accepted open standards for data formatting (such as SGML),
+connectivity (such as TCP/IP and HTTP), and security (such as SSL).</font> </p>
+
+<p><font SIZE="2">Open Financial Exchange defines the request and response messages used
+by each financial service as well as the common framework and infrastructure to support
+the communication of those messages. This specification does not describe any specific
+product implementation.</font> 
+
+<ol>
+  <li><a NAME="_Toc380493241"><font SIZE="4" FACE="Arial">Design Principles</font></a> </li>
+</ol>
+
+<p><font SIZE="2">The following principles were used in designing Open Financial Exchange:</font>
+</p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><font SIZE="2"
+FACE="Arial"><b>Broad</b> <b>Range of Financial Activities</b></font><font SIZE="2"> -
+Open Financial Exchange provides support for a <i><b>broad</b></i> range of financial
+activities. Open Financial Exchange 1.0 specifies the following services:</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Bank statement download</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Credit card statement download</font>
+</p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Funds transfers including
+recurring transfers</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Consumer payments, including
+recurring payments</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Business payments, including
+recurring payments</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Brokerage and mutual fund
+statement download, including transaction history, current holdings and balances</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><font SIZE="2"
+FACE="Arial"><b>Broad</b> <b>Range of Financial Institutions</b></font><font SIZE="2"> -
+Open Financial Exchange supports communication with a <i><b>broad</b></i> range of
+financial institutions (FIs), including:</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Banks</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Brokerage houses</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Merchants</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Processors</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Financial advisors</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">n</font><font SIZE="2"> Government agencies</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><font SIZE="2"
+FACE="Arial"><b>Broad</b> <b>Range of Front-End applications</b></font><font SIZE="2"> -
+Open Financial Exchange supports a <i><b>broad </b></i>range of front-end applications
+covering all types of financial activities running on all types of platforms, including
+Web-based applications.</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><b><font SIZE="2"
+FACE="Arial">Extensible</font></b><font SIZE="2"> - Open Financial Exchange has been
+designed to allow the easy addition of new services. Future versions will include support
+for many new services.</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><b><font SIZE="2"
+FACE="Arial">Open</font></b><font SIZE="2"> - This specification is publicly available.
+You can build client and server applications using the Open Financial Exchange protocols
+independent of any specific technology, product, or company.</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><b><font SIZE="2"
+FACE="Arial">Multiple Client Support</font></b><font SIZE="2"> - Open Financial Exchange
+allows a user to use multiple client applications to access the same data at a financial
+institution. With the popularity of the World Wide Web, customers are increasingly more
+likely to use multiple applications-either desktop-based or Web-based-to perform financial
+activities. For example, a customer can track personal finances at home with a desktop
+application and occasionally pay bills while at work with a Web-based application. The use
+of data synchronization to support multiple clients is a key innovation in Open Financial
+Exchange.</font> </p>
+
+<h1>BREAKPOINT TEST</h1>
+<!-- BREAKPOINT: testing_breakpoint -->
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><b><font SIZE="2"
+FACE="Arial">Robust</font></b><font SIZE="2"> - Open Financial Exchange will be used for
+executing important financial transactions and for communicating important financial
+information. Assuring users that transactions are executed and information is correct is
+crucial. Open Financial Exchange provides robust protocols for error recovery.</font> </p>
+
+<p><font SIZE="1" FACE="Wingdings">l</font><font SIZE="2"> </font><b><font SIZE="2"
+FACE="Arial">Secure</font></b><font SIZE="2"> - Open Financial Exchange provides a
+framework for building secure online financial services. In Open Financial Exchange,
+security encompasses authentication of the parties involved, as well as secrecy and
+integrity of the information being exchanged.</font> </p>
+
+
+</body>
+</html>

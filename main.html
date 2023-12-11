@@ -1,0 +1,120 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            a.level-2 {
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: 14px;
+                color: #818181;
+                background-color: #f7f7f7;
+                display: block;
+            }
+
+            .sidebar {
+                height: 100%;
+                width: 200px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            .sidebar a {
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #818181;
+                display: block;
+            }
+
+            .sidebar a:hover {
+                background-color: #575757; /* Lighter color on hover */
+                color: #f1f1f1;
+            }
+
+            .sidebar a.active {
+                background-color: #ffffff; /* White color on active/click */
+                color: #000000;
+            }
+            .collapsible {
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #818181;
+                display: block;
+            }
+
+            .collapsible:hover {
+                background-color: #575757; /* Lighter color on hover */
+                color: #f1f1f1;
+            }
+
+            .collapsible.active {
+                background-color: #ffffff; /* White color on active/click */
+                color: #000000;
+            }
+
+            .main-content {
+                margin-left: 200px;
+                padding: 0px 10px;
+            }
+
+            .hidden {
+                display: none;
+            }
+        </style>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+            </script>
+            <script>
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.collapsible').forEach(function(collapsible) {
+                    collapsible.addEventListener('click', function() {
+                        var targetId = this.getAttribute('href');
+                        var targetCollapse = this.getAttribute('data-target');
+
+                        // Navigate to the chapter head
+                        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+
+                        // Toggle the visibility of child items
+                        var content = document.querySelector(targetCollapse);
+                        content.classList.toggle('collapse');
+                    });
+                });
+            });
+            </script>
+            </head>
+            <body>
+            <div class="sidebar">
+        
+                <script>
+                    function toggleVisibility(chapterName, level) {
+                        // Select all direct children links of the clicked chapter
+                        var childLinks = document.querySelectorAll(`.child-of-${chapterName}.level-${level + 1}`);
+
+                        childLinks.forEach(function(link) {
+                            // Toggle the 'hidden' class to show or hide the element
+                            link.classList.toggle('hidden');
+                        });
+                    }
+                </script>
+                
+            </div>
+            <div class='main-content'>
+        
+                </div>
+                </body>
+                </html>
+            
